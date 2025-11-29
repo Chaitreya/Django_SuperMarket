@@ -1,0 +1,17 @@
+{% if product_list %}
+    <ul>
+        {% for product in product_list %}
+            <li><a href="{% url 'supermarketTest:detail_product' product.id %}">Name: {{product.name}}</a></li>
+            <ul>
+                <li>Price: {{ product.price }}</li>
+                <li>Stock: {{ product.stock_quantity }}</li>
+                <li>Category: {{ product.category_id.category_name }}</li>
+            </ul>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No products</p>
+
+{% endif %}
+
+<a href="{% url 'supermarketTest:add_product' %}">Add Product</a>

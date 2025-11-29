@@ -1,0 +1,12 @@
+<h1>Product Details</h1>
+    <p><strong>Name:</strong> {{ product.name }}</p>
+    <p><strong>Price:</strong> ${{ product.price }}</p>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+    <p><strong>Stock Quantity:</strong> {{ product.stock_quantity }}</p>
+    <p><strong>Category:</strong> {{ product.category_id.category_name }}</p>
+    <p><strong>Created At:</strong> {{ product.created_at }}</p>
+    <p><strong>Updated At:</strong> {{ product.updated_at }}</p>
+    <a href="{% url 'supermarketTest:edit_product' product.id%}">Edit product</a>
+    <a href="{% url 'supermarketTest:delete_product' product.id%}">Delete product</a>
+
+    <a href="{% url 'supermarketTest:all_products' %}">Back to Products</a>

@@ -1,0 +1,24 @@
+Essential Views:
+Category Views:
+- category_list_view: Display all categories.
+- category_detail_view: Show details of a specific category.
+- category_create_view: Add a new category.
+- category_update_view: Edit an existing category.
+- category_delete_view: Delete a category.
+Product Views:
+- product_list_view: Show all products.
+- product_detail_view: Display details of a selected product.
+- product_create_view: Add a new product.
+- product_update_view: Modify product details.
+- product_delete_view: Remove a product.
+Customer Views:
+- customer_list_view: Display all customers.
+- customer_detail_view: Show details of a specific customer.
+- customer_create_view: Add a new customer.
+- customer_update_view: Edit a customer’s details.
+- customer_delete_view: Remove a customer.
+Sale & Sale Items Views:
+- sale_list_view: Show all sales records.
+- sale_detail_view: Display details of a specific sale.
+- sale_create_view: Register a new sale.
+- sale_items_view: Show items associated with a sale.

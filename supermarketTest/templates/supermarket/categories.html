@@ -1,0 +1,12 @@
+<h1>All categories</h1>
+{% if categories %}
+    <ul>
+        {% for category in categories %}
+            <li>Name: {{ category.category_name }}</li>
+        {% endfor %}
+    </ul>
+
+{% else %}
+    <p>No categories</p>
+
+{% endif %}

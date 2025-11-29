@@ -1,0 +1,7 @@
+.env
+djangoSuperMarketTest\mysite\__pycache__
+djangoSuperMarketTest\mysite\pg_service.conf
+djangoSuperMarketTest\mysite\my_pgpass
+djangoSuperMarketTest\supermarketTest\__pycache__
+djangoSuperMarketTest\supermarketTest\migrations\__pycache__
+*.pyc

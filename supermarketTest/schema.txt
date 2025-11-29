@@ -1,0 +1,53 @@
+Tables for Your Schema
+
+Products Table
+- product_id (Primary Key)
+- name
+- description
+- category_id (Foreign Key)
+- price
+- stock_quantity
+- supplier_id (Foreign Key)
+- created_at
+- updated_at
+
+
+Categories Table
+- category_id (Primary Key)
+- category_name
+- description
+
+
+Sales Table:
+- sale_id → Unique identifier for each sale.
+- customer_id → Links to the customer who made the purchase.
+- total_price → Total amount for the entire sale.
+- sale_date → Date and time when the sale occurred.
+
+
+Sales_Items Table:
+- sale_item_id → Unique identifier for each sale item.
+- sale_id → Links to the sale in the Sales Table.
+- product_id → Links to the product being sold.
+- quantity_sold → How many units of the product were purchased.
+- unit_price → Price of the product at the time of sale.
+
+
+Customers Table (If tracking customer purchases)
+- customer_id (Primary Key)
+- name
+- email
+- phone_number
+- address
+
+Employees Table (If tracking staff managing inventory)
+- employee_id (Primary Key)
+- name
+- role
+- contact_info
+
+Relationships & Keys
+- product_id in the Products Table is linked to product_id in the Sales Table.
+- category_id in the Products Table is linked to category_id in the Categories Table.
+- supplier_id in the Products Table is linked to supplier_id in the Suppliers Table.
+- customer_id in the Sales Table is linked to customer_id in the Customers Table.
