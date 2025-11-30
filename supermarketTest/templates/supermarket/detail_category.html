@@ -1,0 +1,8 @@
+<h1>Category Details</h1>
+    <p><strong>Category:</strong> {{ category.category_name }}</p>
+    <p>Description: {{category.description}}</p>
+    
+    <a href="{% url 'supermarketTest:edit_category' category.id %}">Edit Category</a>
+    <a href="{% url 'supermarketTest:delete_category' category.id %}">Delete Category</a>
+    <a href="{% url 'supermarketTest:all_categories' %}">Back to Category</a>
+

@@ -1,8 +1,8 @@
-<h1>All categories</h1>
+<h1>All Categories</h1>
 {% if categories %}
     <ul>
         {% for category in categories %}
-            <li>Name: {{ category.category_name }}</li>
+            <li><a href="{% url 'supermarketTest:detail_category' category.id %}">Name: {{ category.category_name }}</a></li>
         {% endfor %}
     </ul>
 
@@ -10,3 +10,5 @@
     <p>No categories</p>
 
 {% endif %}
+
+<a href="{% url 'supermarketTest:add_category' %}">Add Category</a>

@@ -1,0 +1,10 @@
+<form action="{% url 'supermarketTest:edit_category' category.id %}" method="POST">
+    {% csrf_token %}
+    <label>Name:</label>
+    <input type="text" name="name" value="{{ category.category_name }}">
+
+    <label>Description:</label>
+    <input type="text" name="description" required value="{{ category.description}}" >
+
+    <button type="submit">Edit Category</button>
+</form>
